@@ -10,6 +10,7 @@
 # parentesco, comprobante de domicilio, ocupación,
 # discapacidad, teléfono1, teléfono2, correo electrónico
 
+from dataclasses import dataclass
 from enum import Enum
 
 class Parentesco(Enum):
@@ -20,6 +21,7 @@ class Parentesco(Enum):
     Tio = 5
     Encargado = 6
 
+@dataclass
 class Tutor:
     nombre: str
     primer_apellido: str

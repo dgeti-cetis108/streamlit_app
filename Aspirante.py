@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from Tutor import Tutor
+
 @dataclass
 class Aspirante:
     nombre: str
@@ -9,3 +11,4 @@ class Aspirante:
     sexo: str
     edad: int
     fecha_de_nacimiento: str
+    tutor: Tutor
