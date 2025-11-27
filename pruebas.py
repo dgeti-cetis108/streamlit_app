@@ -1,5 +1,6 @@
 from Aspirante import Aspirante
 from Tutor import Parentesco, Tutor
+from Fichas import Secundaria
 
 tutor1 = Tutor(
     nombre="Manuel",
@@ -16,3 +17,7 @@ tutor1 = Tutor(
 
 # TODO: Declarar e inicializar un aspirante hijo del tutor1
 # aspirante1 = Aspirante()
+
+esfi = Secundaria(nombre="ESFI", domicilio="Guasave, Sinaloa")
+
+print(esfi.__dict__)
