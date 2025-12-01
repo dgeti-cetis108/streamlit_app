@@ -1,6 +1,4 @@
-from Aspirante import Aspirante
-from Tutor import Parentesco, Tutor
-from Fichas import Secundaria
+from Fichas import Tutor, Secundaria
 
 tutor1 = Tutor(
     nombre="Manuel",
