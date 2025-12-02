@@ -1,21 +1,18 @@
-from Fichas import Tutor, Secundaria
+import Fichas as fi
 
-tutor1 = Tutor(
+tutor1 = fi.Tutor(
     nombre="Manuel",
     primer_apellido="Montana",
     segundo_apellido="Rodriguez",
-    ine="",
-    parentesco=Parentesco.Padre,
-    comprobante_domicilio="",
-    ocupacion="",
+    parentesco=fi.Parentesco.Padre,
     discapacidad=False,
-    telefono="",
-    correo_electronico=""
+    telefono="00000000"
 )
+print(tutor1.__dict__)
 
 # TODO: Declarar e inicializar un aspirante hijo del tutor1
 # aspirante1 = Aspirante()
 
-esfi = Secundaria(nombre="ESFI", domicilio="Guasave, Sinaloa")
+esfi = fi.Secundaria(nombre="ESFI", domicilio="Guasave, Sinaloa")
 
 print(esfi.__dict__)

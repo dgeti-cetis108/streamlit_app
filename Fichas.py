@@ -33,6 +33,18 @@ class Tutor:
     telefono: str
     correo_electronico: str
 
+    def __init__(self, nombre, primer_apellido, segundo_apellido, parentesco, telefono, discapacidad, ine="", comprobante_domicilio="", ocupacion="", correo_electronico=""):
+        self.nombre = nombre
+        self.primer_apellido = primer_apellido
+        self.segundo_apellido = segundo_apellido
+        self.parentesco = parentesco
+        self.telefono = telefono
+        self.discapacidad = discapacidad
+        self.ine = ine
+        self.comprobante_domicilio = comprobante_domicilio
+        self.ocupacion = ocupacion
+        self.correo_electronico = correo_electronico
+
 
 class Aspirante:
     nombre: str
