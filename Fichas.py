@@ -1,17 +1,14 @@
+from datetime import date
 from enum import Enum
 
 
 class Secundaria:
-    nombre: str
-    domicilio: str
     cct: str
-    telefono: str
+    nombre: str
     
-    def __init__(self, nombre, domicilio="", cct="", telefono=""):
-        self.nombre = nombre
-        self.domicilio = domicilio
+    def __init__(self, cct, nombre):
         self.cct = cct
-        self.telefono = telefono
+        self.nombre = nombre
 
 class Parentesco(Enum):
     Padre = 1
@@ -50,12 +47,24 @@ class Aspirante:
     nombre: str
     primer_apellido: str
     segundo_apellido: str
-    #secundaria: Secundaria
     sexo: str
     edad: int
     fecha_de_nacimiento: str
-    #tutor: Tutor
+    enfermedad: bool
+    discapacidad: bool
 
+
+class Carrera:
+    nombre: str
+    plan_de_estudios: int
 
 class Ficha:
-    pass
+    numero: int
+    fecha_de_registro: date
+    aula: str
+    opcion_1: Carrera
+    opcion_2: Carrera
+    opcion_3: Carrera
+    aspirante: Aspirante
+    secundaria: Secundaria
+    tutor: Tutor
