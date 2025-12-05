@@ -22,26 +22,26 @@ class Tutor:
     nombre: str
     primer_apellido: str
     segundo_apellido: str
-    ine: str # "images/tutores/20260115_tutor_ine.jpg"
     parentesco: Parentesco
-    comprobante_domicilio: str
-    ocupacion: str
     discapacidad: bool
     telefono: str
-    correo_electronico: str
 
-    def __init__(self, nombre, primer_apellido, segundo_apellido, parentesco, telefono, discapacidad, ine="", comprobante_domicilio="", ocupacion="", correo_electronico=""):
+    def __init__(self, nombre, primer_apellido, segundo_apellido, parentesco, telefono, discapacidad):
         self.nombre = nombre
         self.primer_apellido = primer_apellido
         self.segundo_apellido = segundo_apellido
         self.parentesco = parentesco
         self.telefono = telefono
         self.discapacidad = discapacidad
-        self.ine = ine
-        self.comprobante_domicilio = comprobante_domicilio
-        self.ocupacion = ocupacion
-        self.correo_electronico = correo_electronico
 
+class Entidad:
+    clave: str
+    nombre: str
+
+class Municipio:
+    clave: str
+    nombre: str
+    entidad: Entidad
 
 class Aspirante:
     nombre: str
@@ -52,11 +52,18 @@ class Aspirante:
     fecha_de_nacimiento: str
     enfermedad: bool
     discapacidad: bool
+    entidad_de_nacimiento: Entidad
+    entidad_donde_vive: Entidad
+    municipio_donde_vive: Municipio
 
 
 class Carrera:
     nombre: str
     plan_de_estudios: int
+
+    def __init__(self, nombre, plan):
+        self.nombre = nombre
+        self.plan_de_estudios = plan
 
 class Ficha:
     numero: int
