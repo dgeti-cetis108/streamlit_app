@@ -49,7 +49,7 @@ class Aspirante:
     segundo_apellido: str
     sexo: str
     edad: int
-    fecha_de_nacimiento: str
+    fecha_de_nacimiento: date
     enfermedad: bool
     discapacidad: bool
     entidad_de_nacimiento: Entidad
