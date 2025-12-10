@@ -46,4 +46,9 @@ ficha1 = f.Ficha()
 ficha1.numero = randint(1, 500)
 ficha1.fecha_de_registro = date.today()
 ficha1.aula = "A01"
-# TODO: finalizar la ficha
+ficha1.opcion_1 = programacion
+ficha1.opcion_2 = comercio
+ficha1.opcion_3 = contabilidad
+ficha1.aspirante = aspirante1
+ficha1.secundaria = esfi
+ficha1.tutor = tutor1
